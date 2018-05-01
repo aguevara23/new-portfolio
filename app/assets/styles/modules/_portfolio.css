@@ -1,7 +1,5 @@
-.portfolio {
+/*.portfolio {
   text-align: center;
-  /*border: 3px dotted blue;*/
-
 
   &__thumb {
     border: 3px solid #aaa;
@@ -10,7 +8,6 @@
     display: inline-block;
     margin: 0 10px;
     width: 85%;
-    /*height: 300px;*/
 
   }
 
@@ -32,4 +29,48 @@
   }
 
 
+}*/
+
+.portfolio {
+  &__section {
+    height: 66vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &__thumb {
+    flex: 1;
+    height: 80%;
+    margin: 10px;
+
+    img {
+      border: 2px solid gray;
+      border-radius: 10px;
+    }
+  }
+
+  &__text {
+    flex: 2;
+    height: 80%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    * {
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    &__subtitle {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    &__description {
+      line-height: 1.5;
+    }
+  }
 }
